@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.atyrachma.iaktugas2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:background="#ee00ee">
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:src="@drawable/art_clear"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Apps"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginLeft="12sp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="#ff00ff">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today, April 11"
+                    android:textSize="23sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:textSize="45sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/output"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20\u00B0F"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15sp"
+                    android:id="@+id/input"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="110sp"
+                    android:src="@drawable/art_rain"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloudy"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ff00ef"
+            android:padding="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Type in \u00B0Celcius..."
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Convert"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:background="#ab00fe"
+                android:padding="8sp"
+                android:onClick="toCelcius"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
